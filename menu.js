@@ -1,19 +1,19 @@
 const toggleBtnOpen = document.getElementById('toggle-btn-open');
-const toggleBtnClose = document.getElementById('toggle-btn-close');
 const dropdownMenu = document.getElementById('nav-links');
 const menuLinks = document.querySelectorAll('.menu-links');
 
-
+// Open and close the dropdown menu every time the toggle button is clicked
 const toggleFunction = () => {
     dropdownMenu.classList.toggle('active');
 }
 
-const toggleClose = () => {
+// Closes the dropdown menu everytime a menu link is clicked
+const closeFunction = () => {
     dropdownMenu.classList.remove('active');
 }
 
+// Eventlisteners
 toggleBtnOpen.addEventListener('click', toggleFunction);
 
-toggleBtnClose.addEventListener('click', toggleFunction);
-
-menuLinks.forEach( btn => btn.addEventListener('click', toggleClose));
+// Adds the click eventlistener to all the links in the dropdown menu
+menuLinks.forEach( btn => btn.addEventListener('click', closeFunction));
