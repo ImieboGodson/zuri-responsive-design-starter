@@ -175,7 +175,7 @@ div.snapshot-box-content {
     justify-content: space-between;
 }
 
-div.box1 {
+div.box {
     background: #fff;
     padding: 10px 20px;
     width: 220px;
@@ -185,21 +185,8 @@ div.box1 {
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
 
-div.box3 {
+div.box:hover {
     background: #304353;
-    padding: 10px 20px;
-    width: 220px;
-    height: 230px;
-    margin: 10px;
-    border-radius: 2px;
-    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
-}
-
-div.box3 h5 {
-    text-align: center;
-    padding-top: 2rem;
-    color: #E44C65;
-    font-size: 1rem;
 }
 
 div.circle {
@@ -213,7 +200,7 @@ div.circle {
     
 }
 
-div.box1 h5 {
+div.box h5 {
     text-align: center;
     padding-top: 2rem;
     color: #E44C65;

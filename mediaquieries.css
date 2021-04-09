@@ -54,12 +54,12 @@
         text-align: center;
     }
 
-    ul.nav-links.active {
-        display: flex;
-    }
-
     ul li {
         margin: 10px 0;
+    }
+
+    ul.nav-links.active {
+        display: flex;
     }
 
     /* Hero section */
