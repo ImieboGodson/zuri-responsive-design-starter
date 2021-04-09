@@ -5,23 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaquieries.css">
 </head>
 <body>
+    
+    <!-- Navbar -->
     <div class="nav-bar">
         <div class="logo">Snapshot</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+        <div class="toggle-btn" id="toggle-btn-open">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero" class="menu-links">Home</a></li>
+            <li><a href="#background" class="menu-links">About</a></li>
+            <li><a href="#gallery" class="menu-links">Gallery</a></li>
+            <li><a href="#footer" class="menu-links">Contact</a></li>
         </ul>
     </div>
 
     <!-- Hero section -->
-
-    <div class="hero-section">
+    <div class="hero-section" id="hero">
         <div class="hero-content-heading">
             <h3>Let's take a snapshot</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero beatae quod molestias voluptas nam <br> facere numquam quos pariatur repellendus excepturi!</p>
@@ -32,7 +37,7 @@
     </div>
 
     <!-- sub-hero section -->
-    <div class="hero-background">
+    <div class="hero-background" id="background">
         <div class="background">
             <h4>Background</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sint ab rerum obcaecati totam neque quam corrupti dolores? Ipsam tempora consequatur quaerat. Voluptates accusamus molestiae nulla sapiente explicabo tempore possimus?</p>
@@ -61,7 +66,7 @@
     </div>
 
     <!-- Gallery section -->
-    <div class="gallery-section">
+    <div class="gallery-section" id="gallery">
         <div class="gallery-content">
             <h4>Gallery</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sapiente. Nullae rem!</p>
@@ -87,7 +92,7 @@
     </div>
 
     <!-- Footer section -->
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="footer-content">
             <h4>Send a message</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sapiente. Nuleos rem!</p>
@@ -104,5 +109,7 @@
         </div>
         <h6>Copyright &copy; 2021 Zuri Training.</h6>
     </div>
+
+    <script src="menu.js"></script>
 </body>
 </html>
